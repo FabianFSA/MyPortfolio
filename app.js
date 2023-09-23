@@ -10,6 +10,13 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  document.getElementById("contactMe").addEventListener("click", function () {
+    var mailto = "sauerfabian.safa@gmail.com";
+    var subject = "Contact via Portfolio-Website";
+    var mailtoLink =
+      "mailto:" + mailto + "?subject=" + encodeURIComponent(subject);
+    window.location.href = mailtoLink;
+  });
   const hiddenElements = document.querySelectorAll(".hidden");
   hiddenElements.forEach((element) => observer.observe(element));
 });
