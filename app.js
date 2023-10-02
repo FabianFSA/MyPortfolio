@@ -10,10 +10,16 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  document
+    .getElementById("returnButton")
+    .addEventListener("click", function () {
+      document.documentElement.scrollIntoView({ behavior: "smooth" });
+    });
+
   document.getElementById("contactMe").addEventListener("click", function () {
-    var mailto = "sauerfabian.safa@gmail.com";
-    var subject = "Contact via Portfolio-Website";
-    var mailtoLink =
+    const mailto = "sauerfabian.safa@gmail.com";
+    const subject = "Contact via Portfolio-Website";
+    const mailtoLink =
       "mailto:" + mailto + "?subject=" + encodeURIComponent(subject);
     window.location.href = mailtoLink;
   });
