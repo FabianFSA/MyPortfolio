@@ -58,6 +58,8 @@ h2 {
   text-align: center;
 }
 #name {
+  display: grid;
+  place-items: center;
   font-size: 32px;
   font-weight: 400;
   word-wrap: break-word;
