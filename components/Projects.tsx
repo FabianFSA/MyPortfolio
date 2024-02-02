@@ -1,8 +1,9 @@
-import { Box, BoxProps, Heading, Text, SimpleGrid } from '@chakra-ui/react'
+import { Box, Heading, Text, SimpleGrid } from '@chakra-ui/react'
+import type { BoxProps } from '@chakra-ui/react'
 import React from 'react'
 
 const Feature: React.FC<
-  { title: string; desc: string; usedTechnologies: string } & BoxProps
+  { title: string; desc: string; usedTechnologies: string } & BoxProps // eslint-disable-line @typescript-eslint/member-delimiter-style,@typescript-eslint/indent
 > = ({ title, desc, usedTechnologies, ...rest }) => (
   <Box p={5} shadow="md" borderWidth="1px" {...rest}>
     <Heading fontSize="xl">{title}</Heading>

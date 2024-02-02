@@ -1,10 +1,10 @@
 import React from 'react'
-import { Box, ChakraProvider, Container, Heading, Text } from '@chakra-ui/react'
+import { ChakraProvider, Container } from '@chakra-ui/react'
 import NavBar from '../components/NavBar'
 import AboutMe from '../components/AboutMe'
 import Projects from '../components/Projects'
 
-const homepage: React.FC = () => {
+const Homepage: React.FC = () => {
   return (
     <ChakraProvider>
       <Container minWidth="100vh">
@@ -16,4 +16,4 @@ const homepage: React.FC = () => {
   )
 }
 
-export default homepage
+export default Homepage
