@@ -5,7 +5,7 @@ import React from 'react'
 const Feature: React.FC<
   { title: string; desc: string; usedTechnologies: string } & BoxProps // eslint-disable-line @typescript-eslint/member-delimiter-style,@typescript-eslint/indent
 > = ({ title, desc, usedTechnologies, ...rest }) => (
-  <Box p={5} shadow="md" borderWidth="1px" {...rest}>
+  <Box p={5} shadow="md" borderWidth="1px" maxW="600px" minH="300px" {...rest}>
     <Heading fontSize="xl">{title}</Heading>
     <Text mt={4}>{desc}</Text>
     <Heading mt={4} fontSize="xl">
@@ -17,9 +17,9 @@ const Feature: React.FC<
 
 const Projects: React.FC = () => {
   return (
-    <Box w="100vh">
+    <Box width="100%" mb={10} p={5}>
       <Heading mb={5}>Projects @ Objektkultur</Heading>
-      <SimpleGrid minChildWidth="350px" spacing={10}>
+      <SimpleGrid minChildWidth="600px" spacing={10}>
         <Feature
           title="RestFul App Api"
           desc="There was a given API for a timebooking web application. The project target was to create a new RestFul Api for a mobile app. This API was used for mobile timebooking, skill management and vacation management."

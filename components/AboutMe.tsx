@@ -16,18 +16,19 @@ const Facts: React.FC<{ desc: string } & BoxProps> = ({ desc, ...rest }) => (
 )
 
 const AboutMe: React.FC = () => (
-  <Box width="100%" mb={10}>
+  <Box width="100%" mb={10} p={5}>
     <Heading fontSize="12.5rem" mb="10vh">
       Hi,
       <br />
       I´m Fabian!
     </Heading>
-    <Heading mb={4}>Short Facts</Heading>
-    <SimpleGrid columns={4} spacing={10}>
+    <Heading mb={4}>Short Facts About Me</Heading>
+    <SimpleGrid minChildWidth="250px" spacing={10}>
       <Facts desc="8th semester Business student @HKA" />
       <Facts desc="28 years old!" />
       <Facts desc="Interested in Softwaredevelopment (Frontend & Backend)" />
-      <Facts desc="Projects done 5" />
+      <Facts desc="Hiking and Karting" />
+      <Facts desc='Goal for 2024 run a half-marathon' />
     </SimpleGrid>
   </Box>
 )
