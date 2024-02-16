@@ -2,8 +2,7 @@ import { HStack } from '@chakra-ui/react'
 import { EmailIcon } from '@chakra-ui/icons'
 import React from 'react'
 
-const handleEmail = () => {
-  // eslint-disable-line @typescript-eslint/explicit-function-return-type
+const handleEmail = () => { // eslint-disable-line @typescript-eslint/explicit-function-return-type
   const emailAddress = 'sauerfabian.safa@gmail.com'
   const subject = 'Contact via Portvoliowebsite'
 
