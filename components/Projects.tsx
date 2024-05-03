@@ -17,7 +17,7 @@ const Feature: React.FC<
 
 const Projects: React.FC = () => {
   return (
-    <Box width="100%" mb={10} p={5}>
+    <Box textAlign="center" width="100%" mb={10} p={5}>
       <Heading mb={5}>Projects @ Objektkultur</Heading>
       <SimpleGrid minChildWidth="600px" spacing={10}>
         <Feature
