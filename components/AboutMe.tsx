@@ -1,37 +1,59 @@
-import { Box, Heading, Image, SimpleGrid, Text } from '@chakra-ui/react'
-import type { BoxProps } from '@chakra-ui/react'
+import { type ReactJSXElement } from '@emotion/react/types/jsx-namespace'
+import { Box, Grid, ThemeProvider, Typography } from '@mui/material'
+import HeroPicture from '/public/Me.png'
+import theme, { accentBlue } from './Theme'
 import React from 'react'
+import Image from 'next/image'
 
-const Facts: React.FC<{ desc: string } & BoxProps> = ({ desc, ...rest }) => (
-  <Box
-    textitem="center"
-    maxW="250px"
-    p={5}
-    shadow="md"
-    borderWidth="1px"
-    {...rest}
-  >
-    <Text>{desc}</Text>
-  </Box>
-)
+const heroPictureStyle = { borderRadius: '50' }
 
-const AboutMe: React.FC = () => (
-  <Box width="100%" mb={10} p={5}>
-    <Heading fontSize="12.5rem" mb="10vh">
-      Hi, <br /> I´m Fabian!
-    </Heading>
-    <Heading textAlign="center" mb={4}>
-      Short Facts About Me
-    </Heading>
-    <Image src='/Images/Me.png'/>
-    <SimpleGrid minChildWidth="250px" spacing={5}>
-      <Facts desc="9th semester Business student @HKA Karlsruhe" />
-      <Facts desc="28 years old!" />
-      <Facts desc="Interested in Softwaredevelopment (Frontend & Backend)" />
-      <Facts desc="Hiking and Karting" />
-      <Facts desc="Goal for 2024 run a half-marathon" />
-    </SimpleGrid>
-  </Box>
-)
+export default function AboutMe(): ReactJSXElement {
+  return (
+    <Box mb={10}>
+      <ThemeProvider theme={theme}>
+        <Grid
+          container
+          direction="row"
+          justifyContent="space-between"
+          alignItems="flex-end"
+        >
+          <Typography variant="h1">
+            Hi, <br /> I´m Fabian<span style={{ color: accentBlue }}>!</span>
+          </Typography>
 
-export default AboutMe
+          <Image
+            src={HeroPicture}
+            alt="HeroPicture"
+            width="260"
+            height="350"
+            style={heroPictureStyle}
+            loading="lazy"
+            quality={100}
+          />
+        </Grid>
+        <Typography variant="h2" mt={15}>
+          About me
+        </Typography>
+        <Box
+          mr={2}
+          mt={2}
+          mb={2}
+          border="3px solid"
+          borderRadius="15px"
+          borderColor={accentBlue}
+          sx={{ boxShadow: 5, padding: 2, width: '950px', height: '225px' }}
+        >
+          <Typography variant="h3">
+            I´m a Business Informatics student in 9th Semester @HKA based in
+            Karlsruhe DE! <br /> <br />
+            I´m interessted in Go Kart racing and hiking! <br /> <br />
+            I´m looking for new challanges, so i decided to run a half-marthon
+            this year! <br />
+            <br />
+            I´m interessted in Softwaredevelopment -- Front- and Backend!
+          </Typography>
+        </Box>
+      </ThemeProvider>
+    </Box>
+  )
+}

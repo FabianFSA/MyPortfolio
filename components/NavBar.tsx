@@ -1,18 +1,30 @@
-import { HStack } from '@chakra-ui/react'
-import { EmailIcon } from '@chakra-ui/icons'
+import { type ReactJSXElement } from '@emotion/react/types/jsx-namespace'
 import React from 'react'
+import { Stack } from '@mui/material'
+import { GitHub, Email, LinkedIn } from '@mui/icons-material'
 
-const handleEmail = () => { // eslint-disable-line @typescript-eslint/explicit-function-return-type
+// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
+export function handleEmail (): void {
   const emailAddress = 'sauerfabian.safa@gmail.com'
   const subject = 'Contact via Portvoliowebsite'
 
   window.location.href = `mailto:${emailAddress}?subject=${subject}`
 }
 
-const NavBar: React.FC = () => (
-  <HStack justify="flex-end" width="100%" mb={10} p={5}>
-    <EmailIcon cursor="pointer" onClick={handleEmail} boxSize={'2em'} />
-  </HStack>
-)
+export function handleLinkeIn (): void {
+  window.open('https://www.linkedin.com/in/fabian-sauer-9367891b1/')
+}
 
-export default NavBar
+export function handleGithub (): void {
+  window.open('https://github.com/FabianFSA')
+}
+
+export default function NavBar (): ReactJSXElement {
+  return (
+  <Stack direction="row" justifyContent="flex-end" alignItems="flex-end" spacing={2}>
+    <Email cursor="pointer" onClick={handleEmail} />
+    <LinkedIn cursor="pointer" onClick={handleLinkeIn}/>
+    <GitHub cursor="pointer" onClick={handleGithub}/>
+  </Stack>
+  )
+}
