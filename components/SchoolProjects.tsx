@@ -89,7 +89,11 @@ export default function SchoolProjects(): ReactJSXElement {
           >
             <Typography variant="h3">HKA APP</Typography>
             <Typography variant="body1">
-              Maintaining the IOS Campus App, more in the future
+              The HKA app is the campus app of Karlsruhe University of Applied
+              Sciences. In addition to the grades, other information can be
+              accessed, such as the meal plan of the canteen. My main task was
+              to make the list of people visible again and to move from google
+              maps to apple map.
             </Typography>
             <Typography variant="h3" mt={2}>
               Used Technologies
@@ -103,18 +107,22 @@ export default function SchoolProjects(): ReactJSXElement {
             border="3px solid"
             borderRadius="15px"
             borderColor={accentBlue}
-            sx={{ boxShadow: 5, padding: 2, width: '475px', height: '200px' }}
+            sx={{ boxShadow: 5, padding: 2, width: '475px', height: '250px' }}
           >
             <Typography variant="h3">ESG Web-Crawler</Typography>
             <Typography variant="body1">
-              Build an Web-Crawler for a company that collect a bunch of
-              different ESG Reports to document their co2 footprint an compare
-              to other companies
+              As part of an application project, a company has commissioned an
+              ESG web crawler to independently search for companies in various
+              industries and download sustainability reports and extract certain
+              data such as the company's CO2 footprint according to SCOPE 1-3. I
+              was mainly responsible for the AI that filters the individual data
+              from the respective ESG report and converts it into a desired
+              format.
             </Typography>
             <Typography variant="h3" mt={2}>
               Used Technologies
             </Typography>
-            <Typography variant="body1">Phyton</Typography>
+            <Typography variant="body1">Phyton & AWS Textract</Typography>
           </Box>
         </Grid>
       </ThemeProvider>

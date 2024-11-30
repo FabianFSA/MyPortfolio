@@ -1,7 +1,8 @@
 import React from 'react'
 import NavBar from '../components/NavBar'
 import AboutMe from '../components/AboutMe'
-import Projects from '../components/Projects'
+import Projects_Exxeta from '../components/Projects_Exxeta'
+import Projects_Objektkultur from '../components/Projects_Objektkultur'
 import SchoolProjects from '../components/SchoolProjects'
 import { Box } from '@mui/material'
 
@@ -16,7 +17,8 @@ const Homepage: React.FC = () => {
       <NavBar />
       <Box p={10} maxWidth="1750px">
         <AboutMe />
-        <Projects />
+        <Projects_Exxeta />
+        <Projects_Objektkultur />
         <SchoolProjects />
       </Box>
     </React.StrictMode>

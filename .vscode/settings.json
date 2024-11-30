@@ -1,4 +1,5 @@
 {
   "colorize.colorized_colors": ["BROWSERS_COLORS", "HEXA", "RGB", "HSL"],
-  "colorize.languages": ["javascript, typescript"]
+  "colorize.languages": ["javascript, typescript"],
+  "editor.fontSize": 17
 }
