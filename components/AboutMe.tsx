@@ -1,7 +1,7 @@
 import { Box, Grid, ThemeProvider, Typography } from '@mui/material'
 import theme, { accentBlue } from './Theme'
 
-export default function Intro() {
+export default function AboutMe() {
   return (
     <ThemeProvider theme={theme}>
       <Typography variant="h2" mt={15} textAlign="center">

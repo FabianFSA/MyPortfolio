@@ -1,4 +1,3 @@
-import {} from 'react-dom/'
 import React from 'react'
 import theme, { accentBlue } from './Theme'
 import { Box, Grid, Typography, ThemeProvider } from '@mui/material'
