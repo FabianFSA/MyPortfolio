@@ -4,6 +4,7 @@ import AboutMe from '../components/AboutMe'
 import Projects_Exxeta from '../components/Projects_Exxeta'
 import Projects_Objektkultur from '../components/Projects_Objektkultur'
 import SchoolProjects from '../components/SchoolProjects'
+import Intro from '../components/Intro'
 import { Box } from '@mui/material'
 
 const Homepage: React.FC = () => {
@@ -16,6 +17,7 @@ const Homepage: React.FC = () => {
 
       <NavBar />
       <Box p={10} maxWidth="1750px">
+        <Intro />
         <AboutMe />
         <Projects_Exxeta />
         <Projects_Objektkultur />

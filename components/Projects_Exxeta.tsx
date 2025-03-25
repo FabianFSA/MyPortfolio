@@ -10,7 +10,7 @@ export default function Projects_Exxeta(): ReactJSXElement {
         <Typography variant="h2" mb={15}>
           Projects <span style={{ color: accentBlue }}>@</span> Exxeta!
         </Typography>
-        <Grid container alignItems="">
+        <Grid container alignItems="flex-start">
           <Box
             mr={2}
             mt={2}
@@ -36,7 +36,7 @@ export default function Projects_Exxeta(): ReactJSXElement {
               Used Technologies
             </Typography>
             <Typography variant="body1">
-              Python, AWS Lambda, AWS Aurora PostgreSQL, Kotlin,
+              Python, AWS Lambda, AWS Aurora PostgreSQL
             </Typography>
           </Box>
         </Grid>
