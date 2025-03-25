@@ -1,4 +1,3 @@
-import { type ReactJSXElement } from '@emotion/react/types/jsx-namespace'
 import { Box, Grid, ThemeProvider, Typography } from '@mui/material'
 import HeroPicture from '../assets/images/fabian_sauer.jpeg'
 import theme, { accentBlue } from './Theme'
@@ -12,7 +11,7 @@ const centerDiv = {
 }
 const heroPictureStyle = { borderRadius: '50%', maxWidth: 600, maxHeight: 600 }
 
-export default function Intro(): ReactJSXElement {
+export default function Intro() {
   return (
     <Box mb={10}>
       <ThemeProvider theme={theme}>

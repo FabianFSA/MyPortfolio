@@ -1,9 +1,8 @@
-import { type ReactJSXElement } from '@emotion/react/types/jsx-namespace'
 import React from 'react'
 import theme, { accentBlue } from './Theme'
 import { Box, Grid, Typography, ThemeProvider } from '@mui/material'
 
-export default function Projects_Objektkultur(): ReactJSXElement {
+export default function Projects_Objektkultur() {
   return (
     <Box textAlign="center" mb={10}>
       <ThemeProvider theme={theme}>
