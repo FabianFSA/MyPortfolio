@@ -6,19 +6,11 @@ export default function SchoolProjects() {
   return (
     <Box textAlign="center" mb={10}>
       <ThemeProvider theme={theme}>
-        <Typography variant="h2" mb={15}>
+        <Typography variant="h2" className="heading2">
           Projects <span style={{ color: accentBlue }}>@</span> HKA!
         </Typography>
-        <Grid container alignItems="flex-start">
-          <Box
-            mr={2}
-            mt={2}
-            mb={2}
-            border="3px solid"
-            borderRadius="15px"
-            borderColor={accentBlue}
-            sx={{ boxShadow: 5, padding: 2, width: '475px', height: '200px' }}
-          >
+        <Grid container alignItems="center" justifyContent="center">
+          <Box className="boxProjects">
             <Typography variant="h3">GraphQL/Restful API</Typography>
             <Typography variant="body1">
               To learn how apis are working, we build a client and server
@@ -33,15 +25,7 @@ export default function SchoolProjects() {
               Java 20, Spring Framework, PostgreSQL, Docker & Kubernetes
             </Typography>
           </Box>
-          <Box
-            mr={2}
-            mt={2}
-            mb={2}
-            border="3px solid"
-            borderRadius="15px"
-            borderColor={accentBlue}
-            sx={{ boxShadow: 5, padding: 2, width: '475px', height: '200px' }}
-          >
+          <Box className="boxProjects">
             <Typography variant="h3">Android App</Typography>
             <Typography variant="body1">
               To learn the process from a business idea to the product. We
@@ -54,15 +38,7 @@ export default function SchoolProjects() {
             </Typography>
             <Typography variant="body1">Kotlin & RoomDatabase</Typography>
           </Box>
-          <Box
-            mr={2}
-            mt={2}
-            mb={2}
-            border="3px solid"
-            borderRadius="15px"
-            borderColor={accentBlue}
-            sx={{ boxShadow: 5, padding: 2, width: '475px', height: '200px' }}
-          >
+          <Box className="boxProjects">
             <Typography variant="h3">React Web App</Typography>
             <Typography variant="body1">
               The GraphQL/Rest API from the previous semester should now be made
@@ -74,18 +50,10 @@ export default function SchoolProjects() {
               Used Technologies
             </Typography>
             <Typography variant="body1">
-              JavaScript/TypeScript, Nest.js, Chakra UI
+              JavaScript/TypeScript, Nest.js, Chakra UI, GitHub Actions
             </Typography>
           </Box>
-          <Box
-            mr={2}
-            mt={2}
-            mb={2}
-            border="3px solid"
-            borderRadius="15px"
-            borderColor={accentBlue}
-            sx={{ boxShadow: 5, padding: 2, width: '475px', height: '200px' }}
-          >
+          <Box className="boxProjects">
             <Typography variant="h3">HKA APP</Typography>
             <Typography variant="body1">
               The HKA app is the campus app of Karlsruhe University of Applied
@@ -99,15 +67,7 @@ export default function SchoolProjects() {
             </Typography>
             <Typography variant="body1">Swift</Typography>
           </Box>
-          <Box
-            mr={2}
-            mt={2}
-            mb={2}
-            border="3px solid"
-            borderRadius="15px"
-            borderColor={accentBlue}
-            sx={{ boxShadow: 5, padding: 2, width: '475px', height: '250px' }}
-          >
+          <Box className="boxProjects">
             <Typography variant="h3">ESG Web-Crawler</Typography>
             <Typography variant="body1">
               As part of an application project, a company has commissioned an
@@ -122,6 +82,28 @@ export default function SchoolProjects() {
               Used Technologies
             </Typography>
             <Typography variant="body1">Phyton & AWS Textract</Typography>
+          </Box>
+          <Box className="boxProjectsLarge">
+            <Typography variant="h3">
+              Bicycle Production: A Smart Planning Tool
+            </Typography>
+            <Typography variant="body1">
+              For the complex production of three different bicycle models, a
+              specialized production planning tool was developed. Initially, all
+              production planning was calculated manually, including not only
+              the number of bicycles to be produced but also the required
+              materials and employee working hours. Certain materials needed to
+              be purchased, and delivery times had to be carefully considered.
+              The tool was designed to fully automate the entire production
+              planning process. Additionally, it provided the flexibility to
+              split batch sizes and adjust the processing sequence. My primary
+              responsibility was implementing the batch-splitting functionality
+              and enabling dynamic reordering of the production sequence.
+            </Typography>
+            <Typography variant="h3" mt={2}>
+              Used Technologies
+            </Typography>
+            <Typography variant="body1">C#</Typography>
           </Box>
         </Grid>
       </ThemeProvider>

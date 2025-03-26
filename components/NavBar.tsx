@@ -26,9 +26,13 @@ export default function NavBar() {
       alignItems="flex-end"
       spacing={2}
     >
-      <Email cursor="pointer" onClick={handleEmail} />
-      <LinkedIn cursor="pointer" onClick={handleLinkeIn} />
-      <GitHub cursor="pointer" onClick={handleGithub} />
+      <Email cursor="pointer" onClick={handleEmail} sx={{ fontSize: 40 }} />
+      <LinkedIn
+        cursor="pointer"
+        onClick={handleLinkeIn}
+        sx={{ fontSize: 40 }}
+      />
+      <GitHub cursor="pointer" onClick={handleGithub} sx={{ fontSize: 40 }} />
     </Stack>
   )
 }

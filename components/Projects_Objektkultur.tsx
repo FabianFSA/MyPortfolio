@@ -6,19 +6,11 @@ export default function Projects_Objektkultur() {
   return (
     <Box textAlign="center" mb={10}>
       <ThemeProvider theme={theme}>
-        <Typography variant="h2" mb={15}>
+        <Typography variant="h2" className="heading2">
           Projects <span style={{ color: accentBlue }}>@</span> Objektkultur!
         </Typography>
-        <Grid container alignItems="flex-start">
-          <Box
-            mr={2}
-            mt={2}
-            mb={2}
-            border="3px solid"
-            borderRadius="15px"
-            borderColor={accentBlue}
-            sx={{ boxShadow: 5, padding: 2, width: '475px', height: '200px' }}
-          >
+        <Grid container alignItems="center" justifyContent="center">
+          <Box className="boxProjects">
             <Typography variant="h3">RestFul App Api</Typography>
             <Typography variant="body1">
               There was a given API for a timebooking web application. The
@@ -33,15 +25,7 @@ export default function Projects_Objektkultur() {
               C#, RestFul, Open API, Swagger
             </Typography>
           </Box>
-          <Box
-            mr={2}
-            mt={2}
-            mb={2}
-            border="3px solid"
-            borderRadius="15px"
-            borderColor={accentBlue}
-            sx={{ boxShadow: 5, padding: 2, width: '475px', height: '200px' }}
-          >
+          <Box className="boxProjects">
             <Typography variant="h3">Change PDF Generator</Typography>
             <Typography variant="body1">
               The PDF generator-modul was deprecated. The support of this PDF
@@ -55,15 +39,7 @@ export default function Projects_Objektkultur() {
             </Typography>
             <Typography variant="body1">C#, QuestPDF</Typography>
           </Box>
-          <Box
-            mr={2}
-            mt={2}
-            mb={2}
-            border="3px solid"
-            borderRadius="15px"
-            borderColor={accentBlue}
-            sx={{ boxShadow: 5, padding: 2, width: '475px', height: '200px' }}
-          >
+          <Box className="boxProjects">
             <Typography variant="h3">
               Service Instruction Service with Power Platform
             </Typography>
@@ -79,15 +55,7 @@ export default function Projects_Objektkultur() {
               Power Apps, Power Automate Flow, Dataverse
             </Typography>
           </Box>
-          <Box
-            mr={2}
-            mt={2}
-            mb={2}
-            border="3px solid"
-            borderRadius="15px"
-            borderColor={accentBlue}
-            sx={{ boxShadow: 5, padding: 2, width: '475px', height: '200px' }}
-          >
+          <Box className="boxProjects">
             <Typography variant="h3">New Exhibitioner Portal</Typography>
             <Typography variant="body1">
               A big german fair want a new exhibitioner portal overhaul. Ans
@@ -104,15 +72,7 @@ export default function Projects_Objektkultur() {
               Logic Apps, Azure Functions, Dynamics 365
             </Typography>
           </Box>
-          <Box
-            mr={2}
-            mt={2}
-            mb={2}
-            border="3px solid"
-            borderRadius="15px"
-            borderColor={accentBlue}
-            sx={{ boxShadow: 5, padding: 2, width: '475px', height: '400px' }}
-          >
+          <Box className="boxProjectsLarge">
             <Typography variant="h3">CRM Sync</Typography>
             <Typography variant="body1">
               The client is internationally active and is pursuing a

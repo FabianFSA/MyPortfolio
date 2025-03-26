@@ -15,8 +15,8 @@ const Homepage: React.FC = () => {
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
       ></link>
 
-      <NavBar />
-      <Box p={10} maxWidth="1750px">
+      <Box maxWidth="1750px" textAlign={'center'} margin={'auto'}>
+        <NavBar />
         <Intro />
         <AboutMe />
         <Projects_Exxeta />

@@ -6,19 +6,11 @@ export default function Projects_Exxeta() {
   return (
     <Box textAlign="center" mb={10}>
       <ThemeProvider theme={theme}>
-        <Typography variant="h2" mb={15}>
+        <Typography variant="h2" mb={2}>
           Projects <span style={{ color: accentBlue }}>@</span> Exxeta!
         </Typography>
-        <Grid container alignItems="flex-start">
-          <Box
-            mr={2}
-            mt={2}
-            mb={2}
-            border="3px solid"
-            borderRadius="15px"
-            borderColor={accentBlue}
-            sx={{ boxShadow: 5, padding: 2, width: '1200px', height: '200px' }}
-          >
+        <Grid container alignItems="center" justifyContent="center">
+          <Box className="boxLarge">
             <Typography variant="h3">
               Evaluation and prototypical implementation of a serverless
               application for proccessing employee data

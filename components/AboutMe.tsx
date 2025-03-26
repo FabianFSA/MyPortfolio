@@ -1,5 +1,5 @@
 import { Box, Grid, ThemeProvider, Typography } from '@mui/material'
-import theme, { accentBlue } from './Theme'
+import theme from './Theme'
 
 export default function AboutMe() {
   return (
@@ -7,16 +7,9 @@ export default function AboutMe() {
       <Typography variant="h2" mt={15} textAlign="center">
         About me
       </Typography>
-      <Grid container alignItems="flex-start">
-        <Box
-          mr={2}
-          mt={2}
-          mb={2}
-          border="3px solid"
-          borderRadius="15px"
-          borderColor={accentBlue}
-          sx={{ boxShadow: 5, padding: 2, width: '1200px', height: '225px' }}
-        >
+
+      <Grid container alignItems="center" justifyContent="center">
+        <Box className="boxLarge">
           <Typography variant="h3">
             I recently graduated with a degree in Business Informatics.<br></br>
             <br></br>
